@@ -1,0 +1,682 @@
+@import "_colors.scss";
+@import "_SpesialName.scss";
+@import "_responsive.scss"; 
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin: 0px;
+	padding:0px; 
+	font-family: Regular Arial;
+	text-decoration: none;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+
+//headerin baslangici 
+header{
+	background-color: #fff;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+
+
+	.overlay {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+		a{
+			padding: 8px;
+			text-decoration: none;
+			font-size: 36px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+		}
+
+		.closebtn {
+			position: absolute;
+			top: 20px;
+			right: 45px;
+			font-size: 60px;
+		}
+	}
+
+	.overlay-content {
+		position: relative;
+		top: 25%;
+		width: 100%;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+
+	.overlay a:hover, .overlay a:focus {
+		color: #f1f1f1;
+	}
+
+	
+//logonun baslangici 
+.logo{
+	margin: 46px 0 46px 0;
+	h3{
+		color:$blue-color;
+
+		span{
+			color: $orange-color;
+			font-size: 21px;
+			font-family: serif;
+		}
+	}
+}
+//logonun sonu
+
+
+
+
+//navin baslangici
+
+
+
+nav{
+	margin:65px 0px 35px 0px; 
+	position: relative;
+	display: block;
+	ul{
+		padding: 0;
+		margin: 0;
+
+		li{
+			display: inline-block;
+			list-style-type: none;
+			a{
+				color: $grey-color;
+				font-size: 20px;
+				padding: 35px 35px;
+				text-decoration: none;
+				outline: none;
+
+				&:hover{
+					transition:all 0.3s ease-in-out;
+					color: $slow_blue-color;
+					padding: 35px 35px;
+					text-decoration: none;
+					border-bottom: 4px solid $strong_blue-color; 
+					outline: none;
+
+
+
+				}
+				&:focus{
+					text-decoration:none;
+					color: $slow_blue-color;
+				}
+			}
+		}
+
+
+
+	}
+
+	.hamburger{
+		display: none;
+	}
+}
+
+
+
+//navin baslangici  
+
+
+}
+
+//headerin Sonu 
+
+
+
+
+
+// company adli sectionun baslangici 
+
+
+.company{
+
+	position: relative;
+	height: 100%;
+	padding:3% 0; 
+	background-attachment: fixed;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(47, 81, 106, 0.9), rgba(47, 81, 106, 0.9)),
+	url("../img/compony_work.jpg");
+	
+	.text{
+		margin-top: 150px;
+		text-align: center;
+		margin-bottom:106px; 
+		
+		color: #fff;
+		h1{
+			font-size: 45px;
+			text-transform: uppercase;
+			font-family: serif;
+		}
+		p{
+			margin-top: 40px;
+			font-size:34px;
+		}
+		.Lorem_famly{
+			font-family: 'Sahitya', serif;
+		}
+		button{
+			width: 250px;
+			height:60px;
+			background-color: transparent;
+			outline: none;
+			border: 1px solid #fff;
+			margin-top: 50px;
+			transition:all 0.3s ease-in-out;
+			&:hover{
+				color:black;
+				background-color: #fff;
+			}
+
+		}
+	} 
+}
+
+
+
+
+// company adli sectionun   sonu 
+
+
+
+// About adli sectionun   Baslangici 
+.About{
+	h3{
+		@extend  %message-shared;
+		margin-top:70px; 
+	}
+
+	.icons{
+		text-align: center;
+		margin-top: 75px;
+		i{
+			height: 120px;
+			line-height: 120px;
+			width: 120px;
+			font-size: 40px;
+			color: #fff;
+			background-color: $blue-color;
+			border-radius: 50%;
+			margin-bottom: 40px;
+
+			animation-duration:3s;
+			animation-delay: 0.3s;
+			animation-iteration-count: 3;
+
+		}
+
+		h3{
+			text-transform: uppercase;
+			color: $blue-color;
+			margin-bottom: 30px;
+		}
+
+		p{
+			color: $grey-slow;
+			margin-bottom: 60px;
+
+		}
+	}
+}
+
+
+
+// About adli sectionun   sonu 
+
+
+// Services adli sectionun   Baslangici 
+
+.Services{
+	
+	position: relative;
+	background-attachment: fixed;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(26, 30, 31, 0.9), rgba(26, 30, 31, 0.9)),
+	url("../img/Services.jpg");
+
+	
+	h3{
+		margin-top: 90px;
+		color:$orange-color;
+		@extend %message-shared;
+		font-size: 25px;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	p{
+		color: #fff;
+		font-size: 20px;
+	}
+
+	ul{
+		margin-top: 50px;
+		margin-bottom: 80px;
+
+		li{
+			transition:all 0.4s ease-in-out;
+			color:$grey-color;
+			margin: 35px 0px;
+
+			&:hover{
+				color:$slow_blue-color;
+			}
+			p{
+				transition:all 0.4s ease-in-out;
+				color:$grey-color;
+				&:hover{
+					color:$slow_blue-color;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+// Services adli sectionun   sonu 
+
+
+
+
+
+// Price adli sectionun Baslangici  
+
+.Price{
+	margin-bottom:80px;
+	h3{
+		@extend %message-shared;	
+		
+	}
+	.flex{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		z-index: 1;
+		.standart{
+
+			position: relative;
+			margin: 0 -14px;
+			margin-top: 70px;
+			height: 100%;
+			border:1px solid #e9eaec;
+			transition:all 0.5s ease-in-out;
+
+			//border: 1px solid #e9eaec;
+			//line-height: 420px;
+			width: 290px;
+			background-color: #fff;
+			
+			border-radius: 6px;
+			
+			list-style-type: none;
+
+
+			.standart_name{
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+				position: relative;
+				
+				text-align: center;
+				background-color: $more_slow_blue-color;
+				color: #fff;
+				height: 70px;
+				line-height: 70px;
+				transition:all 0.5s ease-in-out;
+
+				h3{
+					padding: 25px 0 20px 0;
+					margin: 0px;
+					@extend %message-shared;
+				}
+			}
+
+			.standart_green{
+				background-color: #00b99a;
+			}
+
+			.standart_orenge{
+				background-color: #ef812a;
+			}
+
+
+			.pay{
+				margin: 23px 0px;
+				position: relative;
+				background-color: #fff;
+				text-align: center;
+				height: 160px;
+				line-height: 160px;
+				h3{
+					margin: 0 0;
+				}
+
+				sup{
+					font-size: 20px;
+					color:#344a58;
+					font-weight: bolder;
+					position: relative;
+					top: -18px;
+
+				}
+				sub{
+					font-size: 60px;
+					color:#344a58;
+					font-weight: bolder;
+
+				}
+				span{
+					font-size: 16px;
+					position: relative;
+					top: 16px;
+
+				}
+
+			}
+
+
+			.chek{
+				position: relative;
+				background-color: #fff;
+				text-align: center;
+				margin-bottom: 20px;
+				
+
+
+				
+				ul{
+					position: relative;
+					list-style-type: none;
+					height: 140px;
+					line-height: 140px;
+					margin: 0px 17px;
+					padding: 0px;
+					
+					li{
+
+						display: flex;
+						justify-content: center;
+						line-height: 13px;
+
+						height: 35px;
+						width: 100%;
+						//background-color: blue;
+
+						padding: 10px 0px 13px 0px;
+						margin: 4px auto;
+
+						i{
+							color: green;
+							padding: 0px 11px;
+						}
+						p{
+							color:$mini_grey_slow-color;
+						}
+
+
+						
+
+						
+						
+					}
+				}
+				.asdf:nth-child(odd) {
+					background-color: #edf6fd;
+				}
+
+				.asdf:nth-child(even) {
+					background-color: #f5f5f7;
+				}
+
+			}
+
+
+			.btn_buy{
+				position: relative;
+				margin: 30px 20px;
+				padding: 0px;
+
+				button{
+					margin: 0px;
+					padding: 0px;
+					width: 250px;
+					height: 40px;
+					line-height: 40px;
+					color:#fff;
+					text-align: center;
+					background-color: #316fa8;
+					border-radius: 5px;
+					border-bottom: 4px solid #13436b;
+					outline: none;
+					border: none;
+					transition:all 0.5s ease-in-out;
+				}
+			}
+
+			&:hover{
+				position: relative;
+				z-index: 1;
+				transform: scale(1.1);
+				border:4px solid $normal_orange-color;
+				border-radius: 9px;
+				box-shadow: 0px 0px 9px 2px #d6e8f2;
+				button, .standart_name{
+					background-color:$normal_orange-color;
+				}
+				
+			}
+		}
+	}
+}
+
+//Price adli sectionun Sonu 
+
+
+.Client{
+
+	margin: 0px ;
+	padding: 0px;
+	position: relative;
+	background-attachment: fixed;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(26, 30, 31, 0.9), rgba(26, 30, 31, 0.9)),
+	url("../img/Client.jpg");
+
+	.ClientName{
+		margin: 60px 0px;
+		padding: 0px 0px;
+		h2{
+			text-transform: uppercase;
+			text-align: center;
+			color:$blue-color;
+			font-weight: bold;
+			span{
+				font-weight: 100;
+				color: $orange-color;
+			}
+		}
+	}
+
+
+	.Client_says{
+		margin: 0 0 80px 0;
+		padding: 0px;
+		img{
+			height: 100px;
+			width: 100px;
+		}
+
+		.commit{
+			background-color: #f7f7f7;
+			width: 100%;
+			height: 100%;
+			clip-path: polygon(0 60%, 4% 50%, 4% 6%, 100% 6%, 100% 100%, 4% 100%, 4% 70%);
+			padding: 20px 30px 0px 30px;
+			p{
+				color: #316faa;
+			}
+
+			.border{
+				border-bottom: 2px dotted black;
+				margin-bottom:15px;
+			}
+		}
+	}
+} 
+
+
+
+
+.Map{
+	margin: 0px;
+	padding:0px;
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	.min-map{
+		width:100%;
+		height:100%;
+		position: relative;
+	}
+
+	.contact{
+		margin: 40px 0px;
+		padding: 0px;
+		ul{
+			li{
+				list-style-type: none;
+				color: #737373;
+				margin: 0px 0px;
+				padding: 15px 0px;
+				display: inline-flex;
+
+				.fas{
+					padding: 0px 40px ;
+					color: #2f72a7;
+					font-size: 25px;
+				}
+			}
+		}
+	}
+
+
+	.Icons{
+		display: flex;
+		.Facebook{
+			background-color: #4a67a9;
+			height: 50px;
+			margin: 0 auto;
+			padding: 3px 0;
+			width: 50px;
+			margin: 0 20px;
+			padding: 3px 0px;
+			border-radius: 50%;
+			line-height: 50px;
+			text-align: center;
+			i{
+				font-size: 25px;
+				color:#fff;
+
+			}
+		}
+
+
+		.Twitter{
+			background-color: #19b3e7;
+			height: 50px;
+			margin: 0 auto;
+			padding: 3px 0;
+			width: 50px;
+			margin: 0 20px;
+			padding: 3px 0px;
+			border-radius: 50%;
+			line-height: 50px;
+			text-align: center;
+			i{
+				font-size: 25px;
+				color:#fff;
+
+			}
+		}
+
+
+		.Linkedin{
+			background-color: #007ab9;
+			height: 50px;
+			margin: 0 auto;
+			padding: 3px 0;
+			width: 50px;
+			margin: 0 20px;
+			padding: 3px 0px;
+			border-radius: 50%;
+			line-height: 50px;
+			text-align: center;
+			i{
+				font-size: 25px;
+				color:#fff;
+
+			}
+		}
+	}
+}
+
+
+footer{
+	background-color: #316fa8;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+
+
+	h4{
+		color: #fff;
+		font-weight: bolder;
+		span{
+			color:#eaeff2;
+			font-size: 14px;
+			font-weight: 300;
+		}
+		a{
+			text-decoration: none;
+			color:#000;
+			&:hover{
+				text-decoration: none;
+				color:#000;
+			}
+		}
+	}
+}

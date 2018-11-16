@@ -1,0 +1,145 @@
+@media screen and (max-width: 1200px) {
+
+
+	
+	nav ul{
+		display: none;
+	}
+
+
+	.hamburger{
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+		text-decoration: none;
+		display: block !important;
+		color:#000;
+		font-size: 20px;
+		z-index: 0;
+		outline: none;
+	}
+	.hamburger:hover{
+		text-decoration: none;
+		color:#000;
+		outline: none;
+	}
+
+	.overlay{
+		a {
+			font-size: 20px
+		}
+
+		.closebtn {
+			font-size: 40px;
+			top: 15px;
+			right: 35px;
+		}
+	} 
+}
+
+@media screen and (min-width: 1200px) {
+	.overlay{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.Services{
+		h3{
+			font-size: 19px !important;
+		}
+		p{
+			font-size: 17px !important;
+		}
+	}
+}
+
+
+@media screen and (max-width: 990px) {
+	.company{
+		.text{
+			h1{
+				font-size: 24px !important;
+			}
+
+			p{
+				font-size: 20px !important;
+			}
+		}
+	}
+
+
+
+	.About{
+		h3{
+			font-size: 21px;
+		}
+	}
+
+
+
+	.Price{
+		.standart{
+			width: 100% !important;
+
+			.btn_buy{
+				button{
+					width: 100% !important;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	
+	.Price{
+		.standart{
+			width: 100% !important;
+
+			.btn_buy{
+				button{
+					width: 100% !important;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+	.Map{
+		.contact{
+			margin: 40px 0;
+			padding: 0px;
+			width: 96%;
+			text-align: center;
+			ul{
+				display: inline-grid;
+				text-align: center;
+				justify-content: center ;
+			} 
+		}
+		.Icons{
+			margin: 0 100px 0 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.About{
+		.icons{
+			i{
+				margin-bottom:-30px !important;
+			}
+			
+		}
+	}
+}

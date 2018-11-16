@@ -1,0 +1,606 @@
+.About h3, .Services h3, .Price h3, .Price .flex .standart .standart_name h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    text-decoration: none;
+    display: block !important;
+    color: #000;
+    font-size: 20px;
+    z-index: 0;
+    outline: none;
+  }
+
+  .hamburger:hover {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    display: none;
+  }
+}
+@media screen and (max-width: 730px) {
+  .Services h3 {
+    font-size: 19px !important;
+  }
+  .Services p {
+    font-size: 17px !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .company .text h1 {
+    font-size: 24px !important;
+  }
+  .company .text p {
+    font-size: 20px !important;
+  }
+
+  .About h3 {
+    font-size: 21px;
+  }
+
+  .Price .standart {
+    width: 100% !important;
+  }
+  .Price .standart .btn_buy button {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Price .standart {
+    width: 100% !important;
+  }
+  .Price .standart .btn_buy button {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Map .contact {
+    margin: 40px 0;
+    padding: 0px;
+    width: 96%;
+    text-align: center;
+  }
+  .Map .contact ul {
+    display: inline-grid;
+    text-align: center;
+    justify-content: center;
+  }
+  .Map .Icons {
+    margin: 0 100px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .About .icons i {
+    margin-bottom: -30px !important;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Regular Arial;
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+}
+header .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+header .overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+header .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+header .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+header .overlay a:hover, header .overlay a:focus {
+  color: #f1f1f1;
+}
+header .logo {
+  margin: 46px 0 46px 0;
+}
+header .logo h3 {
+  color: #316fa8;
+}
+header .logo h3 span {
+  color: #ee8228;
+  font-size: 21px;
+  font-family: serif;
+}
+header nav {
+  margin: 65px 0px 35px 0px;
+  position: relative;
+  display: block;
+}
+header nav ul {
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+header nav ul li a {
+  color: #9f9f9f;
+  font-size: 20px;
+  padding: 35px 35px;
+  text-decoration: none;
+  outline: none;
+}
+header nav ul li a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #3170a6;
+  padding: 35px 35px;
+  text-decoration: none;
+  border-bottom: 4px solid #2f70a8;
+  outline: none;
+}
+header nav ul li a:focus {
+  text-decoration: none;
+  color: #3170a6;
+}
+header nav .hamburger {
+  display: none;
+}
+
+.company {
+  position: relative;
+  height: 100%;
+  padding: 3% 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 81, 106, 0.9), rgba(47, 81, 106, 0.9)), url("../img/compony_work.jpg");
+}
+.company .text {
+  margin-top: 150px;
+  text-align: center;
+  margin-bottom: 106px;
+  color: #fff;
+}
+.company .text h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: serif;
+}
+.company .text p {
+  margin-top: 40px;
+  font-size: 34px;
+}
+.company .text .Lorem_famly {
+  font-family: 'Sahitya', serif;
+}
+.company .text button {
+  width: 250px;
+  height: 60px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  margin-top: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.company .text button:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.About h3 {
+  margin-top: 70px;
+}
+.About .icons {
+  text-align: center;
+  margin-top: 75px;
+}
+.About .icons i {
+  height: 120px;
+  line-height: 120px;
+  width: 120px;
+  font-size: 40px;
+  color: #fff;
+  background-color: #316fa8;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  animation-duration: 3s;
+  animation-delay: 0.3s;
+  animation-iteration-count: 3;
+}
+.About .icons h3 {
+  text-transform: uppercase;
+  color: #316fa8;
+  margin-bottom: 30px;
+}
+.About .icons p {
+  color: #d9d9d9;
+  margin-bottom: 60px;
+}
+
+.Services {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(26, 30, 31, 0.9), rgba(26, 30, 31, 0.9)), url("../img/Services.jpg");
+}
+.Services h3 {
+  margin-top: 90px;
+  color: #ee8228;
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.Services p {
+  color: #fff;
+  font-size: 20px;
+}
+.Services ul {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.Services ul li {
+  transition: all 0.4s ease-in-out;
+  color: #9f9f9f;
+  margin: 35px 0px;
+}
+.Services ul li:hover {
+  color: #3170a6;
+}
+.Services ul li p {
+  transition: all 0.4s ease-in-out;
+  color: #9f9f9f;
+}
+.Services ul li p:hover {
+  color: #3170a6;
+}
+
+.Price {
+  margin-bottom: 80px;
+}
+.Price .flex {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.Price .flex .standart {
+  position: relative;
+  margin: 0 -14px;
+  margin-top: 70px;
+  height: 100%;
+  border: 1px solid #e9eaec;
+  transition: all 0.5s ease-in-out;
+  width: 290px;
+  background-color: #fff;
+  border-radius: 6px;
+  list-style-type: none;
+}
+.Price .flex .standart .standart_name {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  position: relative;
+  text-align: center;
+  background-color: #2bc2d5;
+  color: #fff;
+  height: 70px;
+  line-height: 70px;
+  transition: all 0.5s ease-in-out;
+}
+.Price .flex .standart .standart_name h3 {
+  padding: 25px 0 20px 0;
+  margin: 0px;
+}
+.Price .flex .standart .standart_green {
+  background-color: #00b99a;
+}
+.Price .flex .standart .standart_orenge {
+  background-color: #ef812a;
+}
+.Price .flex .standart .pay {
+  margin: 23px 0px;
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+}
+.Price .flex .standart .pay h3 {
+  margin: 0 0;
+}
+.Price .flex .standart .pay sup {
+  font-size: 20px;
+  color: #344a58;
+  font-weight: bolder;
+  position: relative;
+  top: -18px;
+}
+.Price .flex .standart .pay sub {
+  font-size: 60px;
+  color: #344a58;
+  font-weight: bolder;
+}
+.Price .flex .standart .pay span {
+  font-size: 16px;
+  position: relative;
+  top: 16px;
+}
+.Price .flex .standart .chek {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Price .flex .standart .chek ul {
+  position: relative;
+  list-style-type: none;
+  height: 140px;
+  line-height: 140px;
+  margin: 0px 17px;
+  padding: 0px;
+}
+.Price .flex .standart .chek ul li {
+  display: flex;
+  justify-content: center;
+  line-height: 13px;
+  height: 35px;
+  width: 100%;
+  padding: 10px 0px 13px 0px;
+  margin: 4px auto;
+}
+.Price .flex .standart .chek ul li i {
+  color: green;
+  padding: 0px 11px;
+}
+.Price .flex .standart .chek ul li p {
+  color: #8f939c;
+}
+.Price .flex .standart .chek .asdf:nth-child(odd) {
+  background-color: #edf6fd;
+}
+.Price .flex .standart .chek .asdf:nth-child(even) {
+  background-color: #f5f5f7;
+}
+.Price .flex .standart .btn_buy {
+  position: relative;
+  margin: 30px 20px;
+  padding: 0px;
+}
+.Price .flex .standart .btn_buy button {
+  margin: 0px;
+  padding: 0px;
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  background-color: #316fa8;
+  border-radius: 5px;
+  border-bottom: 4px solid #13436b;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+.Price .flex .standart:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.1);
+  border: 4px solid #ef812a;
+  border-radius: 9px;
+  box-shadow: 0px 0px 9px 2px #d6e8f2;
+}
+.Price .flex .standart:hover button, .Price .flex .standart:hover .standart_name {
+  background-color: #ef812a;
+}
+
+.Client {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(26, 30, 31, 0.9), rgba(26, 30, 31, 0.9)), url("../img/Client.jpg");
+}
+.Client .ClientName {
+  margin: 60px 0px;
+  padding: 0px 0px;
+}
+.Client .ClientName h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #316fa8;
+  font-weight: bold;
+}
+.Client .ClientName h2 span {
+  font-weight: 100;
+  color: #ee8228;
+}
+.Client .Client_says {
+  margin: 0 0 80px 0;
+  padding: 0px;
+}
+.Client .Client_says img {
+  height: 100px;
+  width: 100px;
+}
+.Client .Client_says .commit {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 60%, 4% 50%, 4% 6%, 100% 6%, 100% 100%, 4% 100%, 4% 70%);
+  padding: 20px 30px 0px 30px;
+}
+.Client .Client_says .commit p {
+  color: #316faa;
+}
+.Client .Client_says .commit .border {
+  border-bottom: 2px dotted black;
+  margin-bottom: 15px;
+}
+
+.Map {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.Map .min-map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.Map .contact {
+  margin: 40px 0px;
+  padding: 0px;
+}
+.Map .contact ul li {
+  list-style-type: none;
+  color: #737373;
+  margin: 0px 0px;
+  padding: 15px 0px;
+  display: inline-flex;
+}
+.Map .contact ul li .fas {
+  padding: 0px 40px;
+  color: #2f72a7;
+  font-size: 25px;
+}
+.Map .Icons {
+  display: flex;
+}
+.Map .Icons .Facebook {
+  background-color: #4a67a9;
+  height: 50px;
+  margin: 0 auto;
+  padding: 3px 0;
+  width: 50px;
+  margin: 0 20px;
+  padding: 3px 0px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+}
+.Map .Icons .Facebook i {
+  font-size: 25px;
+  color: #fff;
+}
+.Map .Icons .Twitter {
+  background-color: #19b3e7;
+  height: 50px;
+  margin: 0 auto;
+  padding: 3px 0;
+  width: 50px;
+  margin: 0 20px;
+  padding: 3px 0px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+}
+.Map .Icons .Twitter i {
+  font-size: 25px;
+  color: #fff;
+}
+.Map .Icons .Linkedin {
+  background-color: #007ab9;
+  height: 50px;
+  margin: 0 auto;
+  padding: 3px 0;
+  width: 50px;
+  margin: 0 20px;
+  padding: 3px 0px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+}
+.Map .Icons .Linkedin i {
+  font-size: 25px;
+  color: #fff;
+}
+
+footer {
+  background-color: #316fa8;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+footer h4 {
+  color: #fff;
+  font-weight: bolder;
+}
+footer h4 span {
+  color: #eaeff2;
+  font-size: 14px;
+  font-weight: 300;
+}
+footer h4 a {
+  text-decoration: none;
+  color: #000;
+}
+footer h4 a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */
